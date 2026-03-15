@@ -20,7 +20,7 @@ PORT = '443'  # 目标端口号
 
 # 正则表达式
 ipv4_pattern = r'\b(?:[0-9]{1,3}\.){3}[0-9]{1,3}\b'
-ipv6_candidate_pattern = r'([a-fA-F0-9:]{2,39})'
+#ipv6_candidate_pattern = r'([a-fA-F0-9:]{2,39})'
 base_url = "https://ipinfo.io"
 path = "country"
 
@@ -38,10 +38,10 @@ ipv4_dict = {}
 ipv6_dict = {}
 
 # 当前时间
-utctimestamp = datetime.now().strftime('%Y%m%d%H%M')
-beijing_time = datetime.utcnow() + timedelta(hours=8)
-now_str = beijing_time.strftime('%Y-%m-%d_%H:%M')
-timestamp = beijing_time.strftime('%Y%m%d_%H:%M')
+#utctimestamp = datetime.now().strftime('%Y%m%d%H%M')
+#beijing_time = datetime.utcnow() + timedelta(hours=8)
+#now_str = beijing_time.strftime('%Y-%m-%d_%H:%M')
+#timestamp = beijing_time.strftime('%Y%m%d_%H:%M')
 
 # 遍历来源
 for url, shortname in sources.items():
@@ -70,15 +70,15 @@ for url, shortname in sources.items():
                 continue
 
         # IPv6 提取
-        for ip in re.findall(ipv6_candidate_pattern, text):
-            try:
-                ip_obj = ipaddress.ip_address(ip)
-                if ip_obj.version == 6:
-                    ip_with_port = f"[{ip_obj.compressed}]:{PORT}"
-                    comment = f"{shortname}-{myID.uuid4().hex[27:]}{str(random.randint(0,10))}"
-                    ipv6_dict[ip_with_port] = comment
-            except ValueError:
-                continue
+#        for ip in re.findall(ipv6_candidate_pattern, text):
+ #           try:
+  #              ip_obj = ipaddress.ip_address(ip)
+   #             if ip_obj.version == 6:
+    #                ip_with_port = f"[{ip_obj.compressed}]:{PORT}"
+     #               comment = f"{shortname}-{myID.uuid4().hex[27:]}{str(random.randint(0,10))}"
+      #              ipv6_dict[ip_with_port] = comment
+       #     except ValueError:
+        #        continue
 
     except requests.RequestException as e:
         print(f"[请求错误] {url} -> {e}")
@@ -92,10 +92,10 @@ with open('ipv4.txt', 'w') as f4:
         f4.write(f"{ip}#{ipv4_dict[ip]}\n")
 
 # 写入 ipv6.txt（仅IPv6）
-with open('ipv6.txt', 'w') as f6:
-    f6.write(f"ipv6.list.updated.at#Upd{timestamp}\n")
-    for ip in sorted(ipv6_dict):
-        f6.write(f"{ip}#{ipv6_dict[ip]}\n")
+#with open('ipv6.txt', 'w') as f6:
+ #   f6.write(f"ipv6.list.updated.at#Upd{timestamp}\n")
+  #  for ip in sorted(ipv6_dict):
+   #     f6.write(f"{ip}#{ipv6_dict[ip]}\n")
 
 print(f"✅ IPv4 写入 ipv4.txt，共 {len(ipv4_dict)} 个")
-print(f"✅ IPv6 写入 ipv6.txt，共 {len(ipv6_dict)} 个")
+#print(f"✅ IPv6 写入 ipv6.txt，共 {len(ipv6_dict)} 个")
