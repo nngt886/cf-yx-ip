@@ -53,7 +53,7 @@ for url, shortname in sources.items():
             text = '\n'.join(el.get_text() for el in elements)
 
         # IPv4 提取
-        for ip in re.findall(ipv4_pattern, text):
+        for ip in re.findall(ipv4_pattern, text)[:5]:  #取前5个IP
             try:
                 if ipaddress.ip_address(ip).version == 4:                    
                     response = requests.get(f"{base_url}/{ip}/{path}")
