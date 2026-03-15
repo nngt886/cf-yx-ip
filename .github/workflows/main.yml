@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: 📥 Checkout repository
-        uses: actions/checkout@mian
+        uses: actions/checkout@main
 
       - name: 🐍 Set up Python
         uses: actions/setup-python@main
