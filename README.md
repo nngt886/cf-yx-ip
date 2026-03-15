@@ -1,7 +1,7 @@
 # Cloudflare 优选IP
 
 ## 数据源
-* 每 10 分钟 自动构建 (ipv6暂未启用)
+* 每 10 分钟 自动构建 
 * **ipv4.txt** 源采用 [CloudflareSpeedTest](https://ip.164746.xyz)、[WeTest](https://www.wetest.vip/page/cloudflare/address_v4.html)、[IPDB](https://ipdb.030101.xyz/bestcfv4)、[Uouin](https://api.uouin.com/cloudflare.html)
 
 * **ipv6.txt** 源采用 [WeTest（IPV6）](https://www.wetest.vip/page/cloudflare/address_v6.html)、[IPDB（IPV6）](https://ipdb.030101.xyz/bestcfv6)、[CMLiusss（IPV6）](https://addressesapi.090227.xyz/cmcc-ipv6)
