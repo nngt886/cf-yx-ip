@@ -5,7 +5,12 @@ myID = uuid
 
 # ✅ URL源与简称
 sources = {
+     #IPv4源    
     'https://api.uouin.com/cloudflare.html': 'Uouin',
+    'https://www.wetest.vip/page/cloudflare/address_v4.html': 'WeTest',
+    'https://ip.164746.xyz': 'ZXW',
+    'https://ipdb.api.030101.xyz/?type=bestcf': 'IPDB',
+    #IPv46源 
     'https://www.wetest.vip/page/cloudflare/address_v6.html': 'WeTestV6',
     'https://ipdb.api.030101.xyz/?type=bestcfv6': 'IPDBv6',
     'https://addressesapi.090227.xyz/cmcc-ipv6': 'CMLiussv6',
