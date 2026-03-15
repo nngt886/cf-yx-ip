@@ -6,7 +6,7 @@ myID = uuid
 # ✅ URL源与简称
 sources = {
     #IPv4源    
-    'https://ip.164746.xyz/ipTop.html': 'CloudflareSpeedTest',
+    'https://ip.164746.xyz': 'CloudflareSpeedTest',
     #暂不使用'https://www.wetest.vip/page/cloudflare/address_v4.html': 'WeTest',
     #暂不使用'https://ipdb.api.030101.xyz/?type=bestcf': 'IPDB',
     #暂不使用'https://api.uouin.com/cloudflare.html': 'Uouin',
