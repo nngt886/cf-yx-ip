@@ -1,14 +1,2 @@
-162.159.39.124:443#{
-  "status": 429,
-  "error": {
-    "title": "Rate limit hit",
-    "message": "Sign up at ipinfo.io"
-  }
-}-18a389
-172.64.53.248:443#{
-  "status": 429,
-  "error": {
-    "title": "Rate limit hit",
-    "message": "Sign up at ipinfo.io"
-  }
-}-5afba4
+108.162.198.135:443#US-f04dd5
+172.64.53.244:443#US-71fc23
