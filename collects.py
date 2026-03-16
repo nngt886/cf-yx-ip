@@ -16,7 +16,7 @@ sources = {
     #'https://addressesapi.090227.xyz/cmcc-ipv6': 'CMLiussv6',
 }
 
-PORT = '443'  # 目标端口号
+PORT = '80'  # 目标端口号
 
 # 正则表达式
 ipv4_pattern = r'\b(?:[0-9]{1,3}\.){3}[0-9]{1,3}\b'
