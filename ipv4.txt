@@ -1,70 +1,9 @@
-104.18.37.46:80#{
-  "status": 429,
-  "error": {
-    "title": "Rate limit hit",
-    "message": "Sign up at ipinfo.io"
-  }
-}-ff9137
-104.18.46.174:80#{
-  "status": 429,
-  "error": {
-    "title": "Rate limit hit",
-    "message": "Sign up at ipinfo.io"
-  }
-}-7ca522
-108.162.198.94:80#{
-  "status": 429,
-  "error": {
-    "title": "Rate limit hit",
-    "message": "Sign up at ipinfo.io"
-  }
-}-306b46
-162.159.38.94:80#{
-  "status": 429,
-  "error": {
-    "title": "Rate limit hit",
-    "message": "Sign up at ipinfo.io"
-  }
-}-c87721
-162.159.39.165:80#{
-  "status": 429,
-  "error": {
-    "title": "Rate limit hit",
-    "message": "Sign up at ipinfo.io"
-  }
-}-54bb02
-162.159.44.77:80#{
-  "status": 429,
-  "error": {
-    "title": "Rate limit hit",
-    "message": "Sign up at ipinfo.io"
-  }
-}-2c65a8
-162.159.45.57:80#{
-  "status": 429,
-  "error": {
-    "title": "Rate limit hit",
-    "message": "Sign up at ipinfo.io"
-  }
-}-5882d0
-172.64.229.134:80#{
-  "status": 429,
-  "error": {
-    "title": "Rate limit hit",
-    "message": "Sign up at ipinfo.io"
-  }
-}-e369b6
-172.64.52.247:80#{
-  "status": 429,
-  "error": {
-    "title": "Rate limit hit",
-    "message": "Sign up at ipinfo.io"
-  }
-}-0c5b07
-172.64.53.110:80#{
-  "status": 429,
-  "error": {
-    "title": "Rate limit hit",
-    "message": "Sign up at ipinfo.io"
-  }
-}-4d1cf1
+108.162.198.93:80#US-1c9644
+162.159.38.15:80#US-3a1ea1
+162.159.39.54:80#US-26c250
+162.159.44.248:80#US-b559d0
+162.159.45.179:80#US-681ee8
+172.64.157.66:80#US-816578
+172.64.229.252:80#US-8ea200
+172.64.52.87:80#US-17e062
+172.64.53.146:80#US-2ddcb7
