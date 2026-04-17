@@ -7,8 +7,8 @@ myID = uuid
 sources = {
     #IPv4源
     'https://cf.090227.xyz/cu': 'CM优选联通'
-    'https://cf.090227.xyz/cmcc?ips=8': 'CM优选移动'
-    'https://cf.090227.xyz/ct?ips=6': 'CM优选电信'
+    #'https://cf.090227.xyz/cmcc?ips=8': 'CM优选移动'
+    #'https://cf.090227.xyz/ct?ips=6': 'CM优选电信'
     #'https://ip.164746.xyz/ipTop10.html': 'CloudflareSpeedTest',
     #'https://www.wetest.vip/page/cloudflare/address_v4.html': 'WeTest',
     #'https://ipdb.api.030101.xyz/?type=bestcf': 'IPDB',
