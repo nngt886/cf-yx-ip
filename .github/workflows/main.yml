@@ -3,7 +3,7 @@ name: Auto IP Collector
 on:
   workflow_dispatch:
   schedule:
-  - cron: '*/30 * * * *'  # 每 30 分钟执行一次
+  - cron: '0 */12 * * *'  # 每 12 小时执行一次
 
 jobs:
   collect:
