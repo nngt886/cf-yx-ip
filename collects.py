@@ -12,7 +12,6 @@ sources = {
     #'https://ip.164746.xyz/ipTop10.html': 'CloudflareSpeedTest',
     #'https://www.wetest.vip/page/cloudflare/address_v4.html': 'WeTest',
     #'https://ipdb.api.030101.xyz/?type=bestcf': 'IPDB',
-    #'https://api.uouin.com/cloudflare.html': 'Uouin',
     #IPv6源 
     #'https://www.wetest.vip/page/cloudflare/address_v6.html': 'WeTestV6',
     #'https://ipdb.api.030101.xyz/?type=bestcfv6': 'IPDBv6',
