@@ -16,6 +16,5 @@
 104.18.45.223:443#US-c16883
 172.64.147.127:443#US-0b36e0
 172.64.156.112:443#US-550969
-us.cloudflare.cnae.top
 yg8.ygkkk.dpdns.org
 123.cf.090227.xyz
