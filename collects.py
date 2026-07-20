@@ -13,7 +13,7 @@ sources = {
     #'https://www.wetest.vip/page/cloudflare/address_v4.html': 'WeTest',
     #'https://ipdb.api.030101.xyz/?type=bestcf': 'IPDB',
     #IPv6源 
-    #'https://www.wetest.vip/page/cloudflare/address_v6.html': 'WeTestV6',
+    'https://www.wetest.vip/page/cloudflare/address_v6.html': 'WeTestV6',
     #'https://ipdb.api.030101.xyz/?type=bestcfv6': 'IPDBv6',
     #'https://addressesapi.090227.xyz/cmcc-ipv6': 'CMLiussv6',
 }
@@ -89,13 +89,13 @@ for url, shortname in sources.items():
 
 # 写入 ipv4.txt（仅IPv4）
 with open('ipv4.txt', 'w') as f4:
-#    f4.write(f"ipv4.list.updated.at#Upd{timestamp}\n")
+    f4.write(f"ipv4.list.updated.at#Upd{timestamp}\n")
     for ip in sorted(ipv4_dict):
         f4.write(f"{ip}#{ipv4_dict[ip]}\n")
 
 # 写入 ipv6.txt（仅IPv6）
 with open('ipv6.txt', 'w') as f6:
-#    f6.write(f"ipv6.list.updated.at#Upd{timestamp}\n")
+    f6.write(f"ipv6.list.updated.at#Upd{timestamp}\n")
     for ip in sorted(ipv6_dict):
         f6.write(f"{ip}#{ipv6_dict[ip]}\n")
 
