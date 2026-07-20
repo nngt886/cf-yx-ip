@@ -6,15 +6,15 @@ myID = uuid
 # ✅ URL源与简称
 sources = {
     #IPv4源
-    'https://vps789.com/openApi/cfIpApi': 'VPS789'
-    #'https://cf.090227.xyz/cmcc?ips=8': 'CM优选移动'
-    #'https://cf.090227.xyz/ct?ips=6': 'CM优选电信'
-    #'https://ip.164746.xyz/ipTop10.html': 'CloudflareSpeedTest'
-    #'https://www.wetest.vip/page/cloudflare/address_v4.html': 'WeTest'
+    'https://vps789.com/openApi/cfIpApi': 'VPS789',
+    #'https://cf.090227.xyz/cmcc?ips=8': 'CM优选移动',
+    #'https://cf.090227.xyz/ct?ips=6': 'CM优选电信',
+    #'https://ip.164746.xyz/ipTop10.html': 'CloudflareSpeedTest',
+    #'https://www.wetest.vip/page/cloudflare/address_v4.html': 'WeTest',
     #'https://ipdb.api.030101.xyz/?type=bestcf': 'IPDB'
     #IPv6源 
-    'https://www.wetest.vip/page/cloudflare/address_v6.html': 'WeTestV6'
-    #'https://ipdb.api.030101.xyz/?type=bestcfv6': 'IPDBv6'
+    'https://www.wetest.vip/page/cloudflare/address_v6.html': 'WeTestV6',
+    #'https://ipdb.api.030101.xyz/?type=bestcfv6': 'IPDBv6',
     #'https://addressesapi.090227.xyz/cmcc-ipv6': 'CMLiussv6'
 }
 
