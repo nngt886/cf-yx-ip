@@ -31,7 +31,7 @@ headers = {
 }
 
 # 删除旧文件
-for file in ['ipv4.txt', 'ipv6.txt','ipv4+6.txt']:
+for file in ['ipv4.txt', 'ipv6.txt', 'ipv4+6.txt', 'ym.txt']:
     if os.path.exists(file):
         os.remove(file)
 
@@ -105,6 +105,42 @@ with open('ipv4+6.txt', 'w') as f46:
         f46.write(f"{ip}#{ipv4_dict[ip]}\n")
     for ip in sorted(ipv6_dict):
         f46.write(f"{ip}#{ipv6_dict[ip]}\n")
+
+# 获取 VPS789 Top20 域名
+ym_dict = {}
+
+ym_url = 'https://vps789.com/openApi/cfIpTop20'
+
+try:
+    response = requests.get(ym_url, headers=headers, timeout=10)
+    response.raise_for_status()
+
+    # 解析 JSON
+    api_data = response.json()
+
+    # 获取 data.good
+    good_list = api_data.get('data', {}).get('good', [])
+
+    # 按 API 返回顺序读取 Top20
+    for item in good_list:
+        domain = item.get('ip')
+
+        if domain:
+            domain_with_port = f"{domain}:{PORT}"
+            comment = f"VPS789-{myID.uuid4().hex[27:]}{str(random.randint(0, 10))}"
+            ym_dict[domain_with_port] = comment
+
+except requests.RequestException as e:
+    print(f"[请求错误] {ym_url} -> {e}")
+except Exception as e:
+    print(f"[解析错误] {ym_url} -> {e}")
+
+# 写入 ym.txt
+with open('ym.txt', 'w') as fym:
+    for domain in ym_dict:
+        fym.write(f"{domain}#{ym_dict[domain]}\n")
+
+print(f"✅ 域名写入 ym.txt，共 {len(ym_dict)} 个")
 
 print(f"✅ IPv4 写入 ipv4.txt，共 {len(ipv4_dict)} 个")
 print(f"✅ IPv6 写入 ipv6.txt，共 {len(ipv6_dict)} 个")
