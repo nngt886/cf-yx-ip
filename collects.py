@@ -31,7 +31,7 @@ headers = {
 }
 
 # 删除旧文件
-for file in ['ipv4.txt', 'ipv6.txt']:
+for file in ['ipv4.txt', 'ipv6.txt','ipv4+6.txt']:
     if os.path.exists(file):
         os.remove(file)
 
@@ -99,5 +99,13 @@ with open('ipv6.txt', 'w') as f6:
     for ip in sorted(ipv6_dict):
         f6.write(f"{ip}#{ipv6_dict[ip]}\n")
 
+# 写入 ipv4+6.txt（IPv4 + IPv6）
+with open('ipv4+6.txt', 'w') as f46:
+    for ip in sorted(ipv4_dict):
+        f46.write(f"{ip}#{ipv4_dict[ip]}\n")
+    for ip in sorted(ipv6_dict):
+        f46.write(f"{ip}#{ipv6_dict[ip]}\n")
+
 print(f"✅ IPv4 写入 ipv4.txt，共 {len(ipv4_dict)} 个")
 print(f"✅ IPv6 写入 ipv6.txt，共 {len(ipv6_dict)} 个")
+print(f"✅ IPv4 + IPv6 写入 ipv4+6.txt，共 {len(ipv4_dict) + len(ipv6_dict)} 个")
