@@ -14,5 +14,9 @@ https://raw.githubusercontent.com/nngt886/cf-yx-ip/main/ipv4.txt
 ```shell
 https://raw.githubusercontent.com/nngt886/cf-yx-ip/main/ipv6.txt
 ```
+* ``ipv4+6.txt``
+```shell
+https://raw.githubusercontent.com/nngt886/cf-yx-ip/main/ipv4+6.txt
+```
 
 
