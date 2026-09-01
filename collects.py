@@ -6,7 +6,7 @@ myID = uuid
 # ✅ URL源与简称
 sources = {
     #IPv4源
-    'https://vps789.com/openApi/cfIpApi': 'VPS789',
+    'https://vps789.com/openApi/cfIpApi': 'VPS789',  #每小时刷新一次
     #'https://cf.090227.xyz/cmcc?ips=8': 'CM优选移动',
     #'https://cf.090227.xyz/ct?ips=6': 'CM优选电信',
     #'https://ip.164746.xyz/ipTop10.html': 'CloudflareSpeedTest',
@@ -106,7 +106,8 @@ with open('ipv4+6.txt', 'w') as f46:
     for ip in sorted(ipv6_dict):
         f46.write(f"{ip}#{ipv6_dict[ip]}\n")
 
-# 获取 VPS789 Top20 域名
+# 优选域名
+# 获取 VPS789 Top20 域名 每天凌晨刷新
 ym_dict = {}
 
 ym_url = 'https://vps789.com/openApi/cfIpTop20'
