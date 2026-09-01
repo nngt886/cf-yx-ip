@@ -69,10 +69,21 @@ for url, shortname in sources.items():
             # 获取 data
             data = api_data.get('data', {})
 
+            # API分类 → 中文名称
+            category_names = {
+                'CT': '电信',
+                'CU': '联通',
+                'CM': '移动',
+                'AllAvg': '综合'
+            }
+
             # 按照 API 中的分类分别读取
             for category in ['CT', 'CU', 'CM', 'AllAvg']:
 
                 ip_list = data.get(category, [])
+
+                # 获取中文分类名称
+                category_name = category_names.get(category, category)
 
                 # API 返回多少条，就读取多少条
                 for item in ip_list:
@@ -88,9 +99,9 @@ for url, shortname in sources.items():
 
                             ip_with_port = f"{ip}:{PORT}"
 
-                            # 分类 + 随机字符串
+                            # 中文分类 + 随机字符串
                             comment = (
-                                f"{category}-"
+                                f"{category_name}-"
                                 f"{myID.uuid4().hex[27:]}"
                                 f"{str(random.randint(0, 10))}"
                             )
@@ -243,6 +254,7 @@ try:
             )
 
             ym_dict[domain_with_port] = comment
+
 
 except requests.RequestException as e:
     print(f"[请求错误] {ym_url} -> {e}")
